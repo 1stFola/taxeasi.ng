@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxEase NG – Making Tax Work for You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #1e3a8a; color: white; padding: 1rem; }
+    header nav { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1rem; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .hero { background: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg') center/cover no-repeat; color: white; text-align: center; padding: 4rem 1rem; animation: fadeIn 1.5s ease-in; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .hero button { margin: 0.5rem; padding: 1rem 2rem; font-size: 1rem; border: none; background: #10b981; color: white; cursor: pointer; border-radius: 5px; transition: background 0.3s ease; }
+    .hero button:hover { background: #059669; }
+    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
+    h2 { color: #1e3a8a; margin-bottom: 1rem; }
+    .service { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+    .service i { font-size: 2rem; color: #10b981; }
+    ul { padding-left: 1rem; }
+    blockquote { font-style: italic; margin-bottom: 1rem; border-left: 4px solid #10b981; padding-left: 1rem; }
+    footer { text-align: center; }
+    .newsletter input { padding: 0.5rem; margin-top: 0.5rem; width: 70%; max-width: 300px; }
+    .newsletter button { padding: 0.5rem 1rem; background: #10b981; color: white; border: none; cursor: pointer; border-radius: 4px; margin-top: 0.5rem; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) {
+      header nav, nav ul { flex-direction: column; align-items: flex-start; }
+      .service { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>✅ TaxEase NG</strong> – Making Tax Work for You</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#taxid">Get Tax ID</a></li>
+        <li><a href="#refund">File Refund</a></li>
+        <li><a href="#business">For Businesses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Your Easy Path to Tax Compliance & Refunds</h1>
+    <p>Register, Record, and Recover — all in one place</p>
+    <button>Register for Tax ID</button>
+    <button>Claim My Refund</button>
+    <button>Explore POS Solutions</button>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <i class="fas fa-id-card"></i>
+      <div>
+        <h3>Get Your Tax ID Fast</h3>
+        <p>Agent-assisted or self-service. Fully integrated with the Nigeria Revenue Service (NRS).</p>
+      </div>
+    </div>
+    <div class="service">
+      <i class="fas fa-mobile-alt"></i>
+      <div>
+        <h3>Compliant POS & Mobile App</h3>
+        <p>Works with NTAA’s Electronic Fiscal System (EFS). Tracks VAT, income, royalties with ease.</p>
+      </div>
+    </div>
+    <div class="service">
+      <i class="fas fa-hand-holding-usd"></i>
+      <div>
+        <h3>We Claim Your Refund</h3>
+        <p>Free audit, success-based model. Recover overpayments from the last 6 years.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <h2>Why TaxEase NG?</h2>
+    <ul>
+      <li>✓ Trusted by traders and SMEs</li>
+      <li>✓ NTAA 2025-compliant</li>
+      <li>✓ Field support + digital tools</li>
+      <li>✓ Refund claim success in 30–90 days</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <blockquote>“I finally got my Tax ID without stress. TaxEase NG made it simple.” – Fatima, Market Trader</blockquote>
+    <blockquote>“Their refund service recovered ₦240,000 in overpaid VAT for my tech startup.” – Uche, Tech Freelancer</blockquote>
+    <blockquote>“We now track all sales via the POS they set up. Fully compliant.” – Kemi, Boutique Owner</blockquote>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to stay compliant and save money?</h2>
+    <button onclick="alert('Thank you for joining!')">Join Our Community</button>
+    <button onclick="alert('We will contact you shortly for consultation.')">Book a Free Consultation</button>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social">
+      Follow us:
+      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-twitter"></i> X</a>
+    </div>
+    <div class="newsletter">
+      <p>Subscribe to our newsletter for updates and tax tips.</p>
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" />
+      <button onclick="subscribeNewsletter()">Subscribe</button>
+    </div>
+  </footer>
+
+  <script>
+    function subscribeNewsletter() {
+      const email = document.getElementById("newsletterEmail").value;
+      if (email && email.includes("@")) {
+        alert(`Thanks for subscribing, ${email}!`);
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    }
+  </script>
+</body>
+</html>
